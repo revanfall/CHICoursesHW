@@ -1,0 +1,19 @@
+﻿@model AspNetNetwork.Models.User
+
+
+<div class="container p-4 border">
+    <h2>Create</h2>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="@Model.Name" class="form-control mt-2" />
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="@Model.Email" class="form-control mt-2" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Become a developer</button>
+    </form>
+</div>
