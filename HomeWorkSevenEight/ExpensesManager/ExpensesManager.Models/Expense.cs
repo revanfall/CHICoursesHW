@@ -19,6 +19,7 @@ namespace ExpensesManager.Models
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
 
         [NotMapped]
+        [ValidateNever]
         public string CreatedDateTimeToRender { get; set; }
 
         [Required]
